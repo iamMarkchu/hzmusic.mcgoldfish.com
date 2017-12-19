@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
         "/dev": {
             target: "http://127.0.0.1:8000",
-            pathRewrite: {"^/dev": "", "^/api/oauth": "oauth"}
+            pathRewrite: {"^/dev": ""}
         }
     },
 
@@ -63,7 +63,7 @@ module.exports = {
 
     // you can set by youself according to actual condition
     assetsPublicPath: './',
-
+    
     /**
      * Source Maps
      */
